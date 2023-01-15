@@ -1,0 +1,5 @@
+ext.pathMapper = [:]
+ext.pathMapper.put('//wsl\$/Ubuntu/home/clyw/.jdks/openjdk-18.0.2.1/bin/java', '/home/clyw/.jdks/openjdk-18.0.2.1/bin/java')
+ext.pathMapper.put('//wsl\$/Ubuntu/home/clyw/projects/PR/javaProject/app', '/home/clyw/projects/PR/javaProject/app')
+ext.pathMapper.put("<<target java executable path>>", '/home/clyw/.jdks/openjdk-18.0.2.1/bin/java')
+ext.mapPath = { path -> pathMapper.get(path) ?: path }
